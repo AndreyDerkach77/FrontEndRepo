@@ -28,6 +28,21 @@ h1 {
     text-transform: uppercase;
     max-width: 460px;
 }
+.defaultTitle {
+    font-size: 45px;
+    color: #061e37;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.defaultsubText {
+    max-width: 565px;
+    font-size: 15px;
+    line-height: 1.7em;
+    color: #b0bec5;
+    text-align: center;
+    margin: 0 auto 100px;
+}
 .header {
     background: linear-gradient(-53deg, #00b7d3be 0%, #1ce8b5bd 100%),
         url("../img/header_bg.jpg") no-repeat center/cover;
@@ -164,11 +179,11 @@ h1 {
     padding: 100px 0;
 }
 .easy__Title {
-    font-size: 45px;
+    /* font-size: 45px;
     color: #061e37;
     font-weight: 600;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 15px; */
 }
 .easy__subTitle {
     font-size: 25px;
@@ -178,12 +193,12 @@ h1 {
     margin-bottom: 15px;
 }
 .easy__subText {
-    max-width: 565px;
+    /* max-width: 565px;
     font-size: 15px;
     line-height: 1.7em;
     color: #b0bec5;
     text-align: center;
-    margin: 0 auto 100px;
+    margin: 0 auto 100px; */
 }
 .easy__items {
     display: flex;
@@ -230,15 +245,49 @@ h1 {
     color: #fff;
     font-weight: 700;
     text-transform: uppercase;
-    margin: 80px auto;
+    margin: 80px auto 0;
     opacity: 1;
     transition: 0.3s;
-    /* box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.091); */
-    /* box-shadow: 6px 10px 5px rgba(0, 0, 0, 0.291); */
-    /* box-shadow: 0 0 40px rgba(0, 0, 0, 0.4); */
 }
-.easy__btn:hover {
-    /* opacity: 0.8; */
-    /* box-shadow: 6px 10px 5px rgba(0, 0, 0, 0.291); */
-    /* box-shadow: 0 0 40px rgba(0, 0, 0, 0.4); */
+.counter__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    transition: 0.3s;
+}
+.counter__items:hover {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+}
+.counter__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 4);
+    min-height: 150px;
+    padding: 30px;
+}
+.counter__item1 {
+    background-color: #80d8ff;
+}
+.counter__item2 {
+    background-color: #82b1ff;
+}
+.counter__item3 {
+    background-color: #b388ff;
+}
+.counter__item4 {
+    background-color: #ea80fc;
+}
+.counter__text {
+    color: #fff;
+    max-width: 150px;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 800;
+    margin-left: 20px;
+}
+.services {
+    padding: 100px 0;
 }
