@@ -41,7 +41,7 @@ h1 {
     line-height: 1.7em;
     color: #b0bec5;
     text-align: center;
-    margin: 0 auto 100px;
+    margin: 0 auto 50px;
 }
 .header {
     background: linear-gradient(-53deg, #00b7d3be 0%, #1ce8b5bd 100%),
@@ -290,4 +290,118 @@ h1 {
 }
 .services {
     padding: 100px 0;
+}
+/* Аккордеон - вариант на чистом CSS */
+.services__items {
+    max-width: 800px;
+    margin: auto;
+}
+.services__item {
+    margin-bottom: 20px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+.services__item:last-of-type {
+    margin-bottom: 0;
+}
+.services__trigger {
+    display: block;
+    background-color: #fff;
+    color: #061e37;
+    font-weight: normal;
+    padding: 1.2rem;
+    text-transform: uppercase;
+}
+/**
+ * эти элементы radio/checkbox всегда должны быть скрыты.
+ */
+.services__toggle {
+    position: absolute;
+    display: none;
+}
+
+/**
+ * скрытое содержание аккордеона.
+ */
+.services__target {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    background-color: #fff;
+    color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/**
+* когда переключатель checked на radio/checkbox, показать содержимое аккордеона.
+*/
+.services__toggle:checked ~ .services__target {
+    position: static;
+    overflow: visible;
+    width: auto;
+    height: auto;
+    margin: auto;
+    clip: auto;
+    padding: 1.2rem;
+    /* задержка появления  функция анимации */
+    -webkit-animation: fadeIn ease-in 0.7s;
+    -moz-animation: fadeIn ease-in 0.7s;
+    animation: fadeIn ease-in 0.7s;
+}
+/* анимация при появлении блоков с содержанием */
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.services__text {
+    margin: 0 20px 0 20px;
+    line-height: 1.7em;
+    display: flex;
+    flex-direction: column;
+}
+.services__text p:not(:last-child) {
+    margin-bottom: 20px;
+}
+.services__title {
+    display: flex;
+    align-items: center;
+    margin: 0 20px 0 20px;
+}
+.services__arrow {
+    border: 10px solid transparent;
+    border-top-color: #061e37;
+    margin-left: auto;
+    margin-top: 10px;
+}
+.services__label {
+    position: absolute;
+    opacity: 0;
+    padding: 2rem;
+    margin-left: 736px;
+    cursor: pointer;
 }
