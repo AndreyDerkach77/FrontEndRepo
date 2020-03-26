@@ -405,3 +405,97 @@ h1 {
     margin-left: 736px;
     cursor: pointer;
 }
+.testimonials {
+    background: linear-gradient(-53deg, #00b7d3be 0%, #1ce8b5bd 100%),
+        url("../img/test_bg.png") no-repeat center/cover;
+    padding: 30px 0;
+}
+.testimonials__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.testimonials__texts {
+    color: #fff;
+    margin-top: 50px;
+}
+.testimonials__texts h2 {
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 1.2em;
+    max-width: 550px;
+}
+.testimonials__texts p {
+    font-size: 15px;
+    line-height: 1.7em;
+    max-width: 550px;
+    margin-top: 30px;
+}
+.testimonials__btn {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 80px;
+    max-width: 150px;
+    width: 100%;
+    min-height: 55px;
+    border-radius: 5px;
+    background-color: #061e37;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.testimonials__btn:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.801);
+    background-color: #ffffff;
+    color: #061e37;
+    transition: 0.3s;
+}
+.testimonials__reviews {
+    max-width: 760px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.testimonials__review {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.testimonials__review h6 {
+    font-size: 18px;
+    color: #061e37;
+    font-weight: 700;
+}
+.testimonials__review p {
+    font-size: 15px;
+    color: #78909c;
+    font-style: italic;
+    line-height: 1.7em;
+}
+.testimonials__reviewText {
+    background: #fff;
+    padding: 20px 20px;
+    margin-left: 50px;
+}
+.testimonials__review:not(:last-child) {
+    margin-bottom: 70px;
+}
+.testimonials__arrowUp i {
+    font-size: 45px;
+    color: #fff;
+}
+.testimonials__arrowDown i {
+    font-size: 45px;
+    color: #fff;
+}
+.testimonials__arrowUp {
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+.testimonials__arrowDown {
+    margin-left: 100px;
+    margin-top: 20px;
+}
