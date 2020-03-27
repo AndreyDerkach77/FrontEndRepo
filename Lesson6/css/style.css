@@ -486,16 +486,279 @@ h1 {
 .testimonials__arrowUp i {
     font-size: 45px;
     color: #fff;
+    transition: 0.5s;
 }
 .testimonials__arrowDown i {
     font-size: 45px;
     color: #fff;
+    transition: 0.5s;
 }
 .testimonials__arrowUp {
     margin-left: 100px;
     margin-bottom: 20px;
+    transition: 0.3s;
 }
 .testimonials__arrowDown {
     margin-left: 100px;
     margin-top: 20px;
+}
+.testimonials__arrowUp i:hover {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+}
+.testimonials__arrowDown i:hover {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+}
+.team {
+    padding: 100px 0;
+}
+/* .team__avatars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.team__avatars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img.team__img {
+    filter: alpha (Opacity=25);
+    opacity: 0.25;
+    -moz-transition: all 1s ease-in-out; /* эффект перехода для Firefox до версии 16.0 */
+    -webkit-transition: all 1s ease-in-out; /* эффект перехода для Chrome до версии 26.0, Safari, Android и iOS */
+    -o-transition: all 1s ease-in-out; /* эффект перехода для Opera до версии 12.10 */
+    transition: all 1s ease-in-out; /* эффект перехода для других браузеров */
+
+    -moz-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+
+    transform: scale(0.5);
+}
+img.team__img:hover {
+    filter: alpha (Opacity=100);
+    opacity: 1;
+
+    -moz-transform: scale(
+        1
+    ); /* эффект трансформации для Firefox до версии 16.0 */
+    -webkit-transform: scale(
+        1
+    ); /* эффект трансформации для Chrome до версии 26.0, Safari, Android и iOS */
+    -o-transform: scale(1); /* эффект трансформации для Opera до версии 12.10 */
+    -ms-transform: scale(1); /* эффект трансформации для IE 9.0 */
+    transform: scale(1); /* эффект трансформации для других браузеров */
+}
+.team__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.team__head {
+    font-size: 18px;
+    color: #061e37;
+    font-weight: 700;
+}
+.team__sub {
+    font-size: 15px;
+    line-height: 25px;
+    color: #90a4ae;
+    text-align: center;
+    margin-top: 30px;
+    max-width: 650px;
+}
+.team__socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.team__social {
+    width: 32px;
+    min-height: 32px;
+    /* border-radius: 50%; */
+    /* background: #ffffff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #90a4ae;
+    transition: 0.5s;
+}
+.team__social:not(:last-child) {
+    margin-right: 10px;
+}
+.team__social:hover i {
+    color: #000;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 1);
+}
+.contact {
+    padding: 40px 0;
+    background: #fafafa;
+}
+.contact__subText {
+    color: #061e37;
+}
+.contact__form {
+    width: 100%;
+    max-width: 860px;
+    margin: 20px auto 0;
+}
+.contact__inputs {
+    display: flex;
+    justify-content: space-between;
+}
+.contact__inputs:not(:last-child) {
+    margin-bottom: 10px;
+}
+.contact__input {
+    max-width: 410px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 7px;
+}
+.contact__textarea {
+    width: 100%;
+    height: 210px;
+    margin: 0 0 20px;
+    resize: none;
+    padding: 15px;
+    border-radius: 7px;
+}
+.contact__submit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact__submit p {
+    margin-left: 10px;
+    font-size: 15px;
+    color: #061e37;
+    font-weight: 500;
+}
+.check {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.contact__btn {
+    background: #1de9b6;
+    max-width: 150px;
+    width: 100%;
+    min-height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: auto;
+    opacity: 1;
+    transition: 0.3s;
+    border-radius: 7px;
+}
+.contact__btn:hover {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+}
+input:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+}
+/* //checkbox */
+input[type="checkbox"],
+input[type="radio"] {
+    display: none;
+}
+input[type="checkbox"] + label:before {
+    content: "\2713";
+    color: transparent;
+    display: inline-block;
+    border: 1px solid #ced4da;
+    font-size: 20px;
+    line-height: 22px;
+    margin: -5px 5px 0 0;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    vertical-align: middle;
+    transition: color ease 0.3s;
+}
+input[type="checkbox"]:checked + label:before {
+    color: #1de9b6;
+}
+.footer {
+    background: #061e37;
+    padding: 50px 0;
+}
+.footer__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /* position: fixed; */
+}
+.footer__list {
+    display: flex;
+}
+.footer__list li:not(:last-child) {
+    margin-right: 50px;
+}
+.footer__list li a {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 600;
+}
+.footer__list li a:hover {
+    color: #81beff;
+}
+.footer__nav2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #061e37;
+    /* position: fixed; */
+}
+.footer__list2 {
+    display: flex;
+    font-size: 15px;
+}
+.footer__list2 li:not(:last-child) {
+    margin-right: 50px;
+}
+.footer__list2 li a {
+    font-size: 15px;
+    color: #838f9b;
+    font-weight: 600;
+}
+.footer__list2 li a:hover {
+    color: #81beff;
+}
+.footer__socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__social {
+    width: 32px;
+    min-height: 32px;
+    /* border-radius: 50%; */
+    /* background: #ffffff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #384b5f;
+    transition: 0.5s;
+}
+.footer__social:not(:last-child) {
+    margin-right: 10px;
+}
+.footer__social:hover i {
+    color: #000;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 1);
 }
