@@ -1,0 +1,49 @@
+body {
+  font-size: 1000px;
+}
+
+header h1 {
+  font-size: 20px;
+}
+
+p {
+  color: red;
+}
+
+.test22 .title:nth-child(1) {
+  font-size: 40px;
+  color: red;
+}
+
+.test22 .title:nth-child(2) {
+  font-size: 50px;
+  color: green;
+}
+
+.test22 .title:nth-child(3) {
+  font-size: 80px;
+  color: green;
+}
+
+.test22 .title:nth-child(4) {
+  font-size: 100px;
+  color: green;
+}
+
+.test22 .title:nth-child(5) {
+  font-size: 150px;
+  color: blue;
+}
+
+.ttt {
+  font-size: 50px;
+  color: red;
+  border: 1px solid green;
+}
+
+.tttt {
+  font-size: 50px;
+  color: red;
+  border: 1px solid green;
+  text-transform: uppercase;
+}
