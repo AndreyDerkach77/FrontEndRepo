@@ -11,7 +11,7 @@
     margin: 0 auto;
 }
 .defaultContainer {
-  padding: 100px 15px;
+    padding: 100px 15px;
 }
 body {
     font-family: "Montserrat", sans-serif;
@@ -29,6 +29,7 @@ a {
 a:hover {
     color: #061e37;
     background-color: #fff;
+    text-decoration: none;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.801);
 }
 .defaulTitle {
@@ -38,6 +39,7 @@ a:hover {
     position: relative;
     margin-bottom: 60px;
     color: #555555;
+    font-weight: 400;
 }
 .defaulTitle::after {
     content: "";
@@ -50,9 +52,12 @@ a:hover {
     background: #555555;
 }
 .defaultSubtitle {
+    font-family: "Roboto Slab", sans-serif;
     text-align: center;
     font-size: 16px;
-    line-height: 1.4;
+    line-height: 1.7;
+    font-weight: 400;
+    margin-bottom: 50px;
 }
 .header {
     background: url("../img/header_bg_.jpg") no-repeat center/cover;
@@ -94,8 +99,77 @@ a:hover {
     border: #fff solid 1px;
     margin-top: 55px;
 }
-
 .header__nav h6 {
     font-size: 24px;
     font-weight: 700;
+}
+.services__item {
+    margin-top: 20px;
+    transition: 0.5s;
+}
+.services__item:hover {
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.801);
+}
+.services__item p {
+    text-align: justify;
+    text-align-last: center;
+    transition: 0.5s;
+}
+.services__pic {
+    margin-bottom: 30px;
+}
+.services__text {
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.services__subtext {
+    font-family: "Roboto Slab", sans-serif;
+    line-height: 2;
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 370px;
+}
+.about {
+    background: #f8f8f8;
+}
+.about__text {
+    font-family: "Roboto Slab", sans-serif;
+    line-height: 2;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 70px;
+}
+.about__item h6 {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.about__item p {
+    font-family: "Roboto Slab", sans-serif;
+    line-height: 2;
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 370px;
+}
+.about__img {
+    position: relative;
+}
+.about__img:hover:after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-left: -262px;
+    content: "";
+    background: #4e4b4b6c;
+}
+
+.about__socials:hover {
+}
+.about__socials {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    width: 100%;
+    z-index: 100;
 }
