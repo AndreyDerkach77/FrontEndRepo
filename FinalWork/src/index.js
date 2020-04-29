@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
         });
     });
     // Навигация
-    
+
     $(window).on("scroll", function() {
         let nav = $(".header__nav");
         if ($(window).scrollTop() > 200) {
@@ -35,16 +35,44 @@ jQuery(document).ready(function($) {
         let dest = $(href).offset().top;
         $("body,html").animate({ scrollTop: dest }, 1000);
     });
+
+    //Фильтрация
+    let btns = $(".works__btn");
+    btns.on("click", function() {
+        $(this)
+            .addClass("active")
+            .siblings()
+            .removeClass("active");
+        let cards = $(".work__item");
+        cards.removeClass("active");
+        let btnText = $(this)
+            .text()
+            .toLowerCase();
+        let final = cards.filter(function() {
+            if (btnText === "all") {
+                return cards;
+            } else {
+                return $(this).data("category") === btnText;
+            }
+        });
+        // console.log("cards", cards);
+        // console.log("final", final);
+        final.each(function() {
+            $(this).addClass("active");
+        });
+    });
+
     // Настройка слайдера
     $(function() {
         // Owl Carousel
         var owl = $(".slider__slides");
         owl.owlCarousel({
             items: 1,
-            // margin: 10,
-            // loop: true,
             nav: true,
-            navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+            navText: [
+                "<i class='fa fa-chevron-left'></i>",
+                "<i class='fa fa-chevron-right'></i>",
+            ],
         });
     });
 
