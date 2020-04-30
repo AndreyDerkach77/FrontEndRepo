@@ -77,14 +77,19 @@ jQuery(document).ready(function($) {
     });
 
     // Настройка темы
-    $("body").addClass(localStorage.getItem("theme"));
-    $(".themes2").addClass(localStorage.getItem("theme"));
+    let theme;
+    theme = localStorage.getItem("theme");
+    $("body").addClass(theme);
+    $(".themes2").addClass(theme);
+    $(".header__nav").addClass(theme);
+    $(".works").addClass(theme);
+
     let lastTheme =
         localStorage
             .getItem("theme")
             .charAt(0)
             .toUpperCase() + localStorage.getItem("theme").slice(1);
-    console.log(lastTheme);
+    // console.log(lastTheme);
 
     $(".themes2 option:contains(" + lastTheme + ")").each(function() {
         if ($(this).text() == lastTheme) {
@@ -93,38 +98,26 @@ jQuery(document).ready(function($) {
         }
         return true;
     });
+
     $(".themes2").on("change", function() {
-        $("body").removeClass(localStorage.getItem("theme"));
-        $(".themes2").removeClass(localStorage.getItem("theme"));
+        $("body").removeClass(theme);
+        $(".themes2").removeClass(theme);
+        $(".header__nav").removeClass(theme);
+        $(".works").removeClass(theme);
+
         localStorage.setItem("theme", $(this).val());
-        $("body").addClass(localStorage.getItem("theme"));
-        $(".themes2").addClass(localStorage.getItem("theme"));
+
+        theme = localStorage.getItem("theme");
+
+        $("body").addClass(theme);
+        $(".themes2").addClass(theme);
+        $(".header__nav").addClass(theme);
+        $(".works").addClass(theme);
     });
-    // $("body").addClass($(".themes2").find("option:selected").text());
-    // console.log($(".themes2").find("option:selected").text());
 
-    // console.log($('#themes').val(lastTheme));
-    // $('".themes" option:contains("Dark")').prop('selected', true);
-    // console.log($('#themes').filter(function () { return $(this).html() == "Light"; }).val());
-    // console.log($('#themes').find('option[text="Light"]').val());
-    // let selectValue = $(".themes")
-    //     .find("option:selected")
-    //     .index();
-    // console.log(selectValue);
-    // $(".themes")
-    //     .prop("selectedIndex", selectValue)
-    //     .selectric("refresh");
-
-    // console.log(lastTheme);
-
-    // $(".themes").selectric({
-    //     // $(this).val() = localStorage.getItem("theme"),
-    //     // $(this).prop('selectedIndex', 1).selectric('refresh'),
-    //     onChange: function() {
-    //         $("body").removeClass(localStorage.getItem("theme"));
-    //         localStorage.setItem("theme", $(this).val());
-    //         $("body").addClass(localStorage.getItem("theme"));
-    //         // console.log(localStorage.getItem("theme"));
-    //     },
-    // });
+    $('.works__load').click(function(){
+    
+        $('#imulated').trigger('click');
+        
+    });
 });
