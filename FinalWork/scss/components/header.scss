@@ -15,12 +15,7 @@
         max-height: 90px;
         left: 0;
         transition: 1s;
-        &.dark {
-            background: rgb(39, 38, 38);
-        }
-        &.light {
-            background: #fff;
-        }
+        background: #fff;
         &.fixed {
             position: fixed;
             z-index: 1000;

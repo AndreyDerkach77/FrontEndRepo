@@ -73,11 +73,12 @@ jQuery(document).ready(function($) {
 
     // Настройка темы
     let theme;
+    if (localStorage.getItem("theme")===null) {
+        localStorage.setItem("theme", 'light');
+    }
     theme = localStorage.getItem("theme");
-    $("body").addClass(theme);
-    $(".themes2").addClass(theme);
-    $(".header__nav").addClass(theme);
-    $(".works").addClass(theme);
+    console.log(theme);
+    $("body, .themes2, .header__nav, .works, .about").addClass(theme);
 
     let lastTheme =
         localStorage
@@ -94,19 +95,13 @@ jQuery(document).ready(function($) {
     });
 
     $(".themes2").on("change", function() {
-        $("body").removeClass(theme);
-        $(".themes2").removeClass(theme);
-        $(".header__nav").removeClass(theme);
-        $(".works").removeClass(theme);
+        $("body, .themes2, .header__nav, .works, .about").removeClass(theme);
 
         localStorage.setItem("theme", $(this).val());
 
         theme = localStorage.getItem("theme");
 
-        $("body").addClass(theme);
-        $(".themes2").addClass(theme);
-        $(".header__nav").addClass(theme);
-        $(".works").addClass(theme);
+        $("body, .themes2, .header__nav, .works, .about").addClass(theme);
     });
 
     // Динамическое добавление блоков
@@ -141,11 +136,6 @@ jQuery(document).ready(function($) {
         let divAdd = `work__item extra${counter} active`;
         let divAdd2 = `works__pic extra${counter}`;
         let divAdd3 = `overlay extra${counter}`;
-
-        console.log(divAdd);
-        console.log(getDataCategory);
-        console.log(divAdd2);
-        console.log(divAdd3);
 
         let div = $("<div/>", {
             class: divAdd,

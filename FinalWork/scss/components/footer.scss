@@ -46,14 +46,8 @@
         height: 30px;
         width: 70px;
         font-size: 14px;
-        &.dark {
-            background: rgb(39, 38, 38);
-            color: #9c9c9c;
-        }
-        &.light {
-            background: #fff;
-            color: rgb(39, 38, 38);
-        }
+        background: #fff;
+        color: rgb(39, 38, 38);
     }
 
     .footer__btnUp {

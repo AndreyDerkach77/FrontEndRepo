@@ -9,7 +9,8 @@
         width: 100%;
 
         .heading_img {
-            width: 100%;
+            max-width: 100%;
+            display: flex;
         }
         .container {
             position: absolute;

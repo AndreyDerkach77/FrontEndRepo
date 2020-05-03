@@ -1,7 +1,3 @@
-@import "./components/spec.scss";
-@import "./components/header.scss";
-@import "./components/footer.scss";
-
 .slider {
     height: 650px;
     height: 100%;
@@ -115,12 +111,7 @@
 .works {
     padding-bottom: 70px;
     padding-top: 35px;
-    &.dark {
-        background: rgb(39, 38, 38);
-    }
-    &.light {
-        background: #fafafa;
-    }
+    background: #fafafa;
     .works__nav {
         border-top: 1px solid #dfdfdf;
         border-bottom: 1px solid #dfdfdf;
