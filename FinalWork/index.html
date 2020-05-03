@@ -14,7 +14,6 @@
             integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
             crossorigin="anonymous"
         />
-        <!-- <link rel="stylesheet" href="./libs/selectric.css" /> -->
         <link rel="stylesheet" href="./libs/owl.carousel.min.css" />
         <link rel="stylesheet" href="./libs/owl.theme.default.min.css" />
         <link rel="stylesheet" href="./src/index.css" />
@@ -28,11 +27,11 @@
                     /></a>
                     <div class="header__navPart">
                         <ul class="header__navList">
-                            <li><a class="active" href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a class="active" href="./home.html">Home</a></li>
+                            <li><a href="./about.html">About</a></li>
+                            <li><a href="./portfolio.html">Portfolio</a></li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
                         </ul>
                         <div class="header__burger">
                             <span class="header__line header__line_top"></span>
@@ -43,15 +42,6 @@
                                 class="header__line header__line_bottom"
                             ></span>
                         </div>
-                        <!-- <a class="header__cart" href="#"
-                            ><i class="fa fa-shopping-cart"></i
-                        ></a> -->
-                        <!-- <div class="header__cartModal">
-                            <div class="header__cartClose">&times;</div>
-                            <div class="header__carttext">
-                                <i class="fa fa-shopping-cart"></i>
-                            </div>
-                        </div> -->
                         <form action="#" class="header__search">
                             <input
                                 type="text"
@@ -88,20 +78,20 @@
             <div class="container">
                 <div class="works__nav">
                     <div class="works__btn active">All</div>
-                    <hr>
+                    <hr />
                     <div class="works__btn">Logo</div>
-                    <hr>
+                    <hr />
                     <div class="works__btn">Mobile App</div>
-                    <hr>
+                    <hr />
                     <div class="works__btn">WordPress</div>
-                    <hr>
+                    <hr />
                     <div class="works__btn">Web Design</div>
-                    <hr>
+                    <hr />
                     <div class="works__btn">UI/IX</div>
-                    <hr>
+                    <hr />
                     <div class="works__btn">Branding</div>
                 </div>
-                
+
                 <div class="works__items">
                     <div class="work__item active" data-category="logo">
                         <div class="works__pic">
@@ -184,8 +174,13 @@
                         </div>
                     </div>
                 </div>
-                <input id=avatarfile name=avatarfile type=file>
-                <button class="works__load">Load More</button>
+                <label class="works__load" for="fileLoad">Load More</label>
+                <input
+                    class="fileLoad"
+                    id="fileLoad"
+                    name="fileLoad"
+                    type="file"
+                />
             </div>
         </section>
         <footer class="footer">
@@ -232,10 +227,6 @@
                 © 2016 <span>Mulitix Theme</span> by ThemeForces. All Rights
                 Reserved.
             </p>
-            <!-- <select class="themes" name="themes" id="themes">
-                <option value="light">Light</option>
-                <option value="dark">Dark</option>
-            </select> -->
 
             <select class="themes2" name="themes2" id="themes2">
                 <option value="light">Light</option>
@@ -248,7 +239,6 @@
         </footer>
 
         <script src="./libs/jquery-3.5.0.js"></script>
-        <!-- <script src="./libs/jquery.selectric.min.js"></script> -->
         <script src="./libs/owl.carousel.min.js"></script>
         <script src="./src/index.js"></script>
     </body>

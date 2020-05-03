@@ -10,6 +10,7 @@ jQuery(document).ready(function($) {
             $(".header__input").toggleClass("opened");
         });
     });
+
     // Навигация
 
     $(window).on("scroll", function() {
@@ -55,8 +56,6 @@ jQuery(document).ready(function($) {
                 return $(this).data("category") === btnText;
             }
         });
-        // console.log("cards", cards);
-        // console.log("final", final);
         final.each(function() {
             $(this).addClass("active");
         });
@@ -69,10 +68,6 @@ jQuery(document).ready(function($) {
         owl.owlCarousel({
             items: 1,
             nav: true,
-            navText: [
-                "<i class='fa fa-chevron-left'></i>",
-                "<i class='fa fa-chevron-right'></i>",
-            ],
         });
     });
 
@@ -89,7 +84,6 @@ jQuery(document).ready(function($) {
             .getItem("theme")
             .charAt(0)
             .toUpperCase() + localStorage.getItem("theme").slice(1);
-    // console.log(lastTheme);
 
     $(".themes2 option:contains(" + lastTheme + ")").each(function() {
         if ($(this).text() == lastTheme) {
@@ -115,9 +109,64 @@ jQuery(document).ready(function($) {
         $(".works").addClass(theme);
     });
 
-    $('.works__load').click(function(){
-    
-        $('#imulated').trigger('click');
-        
+    // Динамическое добавление блоков
+    let fileLoad = $(".fileLoad");
+    let dataCategoryArr = [
+        "logo",
+        "wordpress",
+        "web design",
+        "ui/ix",
+        "mobile app",
+        "branding",
+    ];
+    let counter = 0;
+
+    fileLoad.on("change", function() {
+        if (fileLoad.get(0).files[0] != undefined) {
+            addDynamicExtraField();
+        } else {
+            console.log("Ничего не выбрано");
+        }
     });
+
+    function addDynamicExtraField() {
+        counter++;
+
+        let fileName = fileLoad.get(0).files[0].name;
+        let getRandomArrIndex = Math.floor(
+            Math.random() * dataCategoryArr.length + 0
+        );
+        let getDataCategory = dataCategoryArr[getRandomArrIndex];
+
+        let divAdd = `work__item extra${counter} active`;
+        let divAdd2 = `works__pic extra${counter}`;
+        let divAdd3 = `overlay extra${counter}`;
+
+        console.log(divAdd);
+        console.log(getDataCategory);
+        console.log(divAdd2);
+        console.log(divAdd3);
+
+        let div = $("<div/>", {
+            class: divAdd,
+            "data-category": getDataCategory,
+        }).appendTo($(".works__items"));
+
+        let div2 = $("<div/>", {
+            class: divAdd2,
+        }).appendTo(div);
+
+        let img = $("<img/>", {
+            src: `./img/${fileName}`,
+            alt: "",
+        }).appendTo(div2);
+
+        let div3 = $("<div/>", {
+            class: divAdd3,
+        }).appendTo(div);
+
+        let p = $("<p/>", {
+            text: "+",
+        }).appendTo(div3);
+    }
 });
