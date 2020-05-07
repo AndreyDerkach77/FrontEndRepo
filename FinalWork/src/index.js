@@ -77,30 +77,23 @@ jQuery(document).ready(function($) {
         localStorage.setItem("theme", 'light');
     }
     theme = localStorage.getItem("theme");
-    console.log(theme);
+    
     $("body, .themes2, .header__nav, .works, .about").addClass(theme);
 
-    let lastTheme =
-        localStorage
-            .getItem("theme")
-            .charAt(0)
-            .toUpperCase() + localStorage.getItem("theme").slice(1);
+    if (theme === "light") {
+        $("#switch").prop("checked", true);
+    } else {
+        $("#switch").prop("checked", false);
+    }
 
-    $(".themes2 option:contains(" + lastTheme + ")").each(function() {
-        if ($(this).text() == lastTheme) {
-            $(this).attr("selected", "selected");
-            return false;
-        }
-        return true;
-    });
-
-    $(".themes2").on("change", function() {
+    $("#switch").on("change", function() {
         $("body, .themes2, .header__nav, .works, .about").removeClass(theme);
-
-        localStorage.setItem("theme", $(this).val());
-
+        if ($(this).prop("checked") === true) {
+            localStorage.setItem("theme", "light");
+        } else {
+            localStorage.setItem("theme", "dark");
+        }
         theme = localStorage.getItem("theme");
-
         $("body, .themes2, .header__nav, .works, .about").addClass(theme);
     });
 

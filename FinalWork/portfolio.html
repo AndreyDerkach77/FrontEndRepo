@@ -61,7 +61,7 @@
         <section class="heading">
             <div class="heading__item">
                 <img class="heading_img" src="./img/portfolio.png" alt="" />
-                <class class="container">
+                <div class="heading__container">
                     <div class="heading__texts">
                         <h1>Latest Projects</h1>
                         <p>We Deliver Quality</p>
@@ -69,7 +69,115 @@
                 </div>
             </div>
         </section>
-        <section class="about"></section>
+        <section class="works">
+            <div class="container">
+                <div class="works__nav">
+                    <div class="works__btn active">All</div>
+                    <hr />
+                    <div class="works__btn">Logo</div>
+                    <hr />
+                    <div class="works__btn">Mobile App</div>
+                    <hr />
+                    <div class="works__btn">WordPress</div>
+                    <hr />
+                    <div class="works__btn">Web Design</div>
+                    <hr />
+                    <div class="works__btn">UI/IX</div>
+                    <hr />
+                    <div class="works__btn">Branding</div>
+                </div>
+
+                <div class="works__items">
+                    <div class="work__item active" data-category="logo">
+                        <div class="works__pic">
+                            <img src="./img/work1.png" alt="" />
+                        </div>
+                        <div class="overlay">
+                            <p>+</p>
+                        </div>
+                    </div>
+                    <div class="work__item active" data-category="wordpress">
+                        <div class="works__pic">
+                            <img src="./img/work2.png" alt="" />
+                        </div>
+                        <div class="overlay">
+                            <p>+</p>
+                        </div>
+                    </div>
+                    <div class="work__item active" data-category="web design">
+                        <div class="works__pic">
+                            <img src="./img/work3.png" alt="" />
+                        </div>
+                        <div class="overlay">
+                            <p>+</p>
+                        </div>
+                    </div>
+                    <div class="work__item active" data-category="ui/ix">
+                        <div class="works__pic">
+                            <img src="./img/work4.png" alt="" />
+                        </div>
+                        <div class="overlay">
+                            <p>+</p>
+                        </div>
+                    </div>
+                    <div class="work__item active" data-category="mobile app">
+                        <div class="works__pic">
+                            <img src="./img/work5.png" alt="" />
+                        </div>
+                        <div class="overlay">
+                            <p>+</p>
+                        </div>
+                    </div>
+                    <div class="work__item active" data-category="branding">
+                        <div class="works__pic">
+                            <img src="./img/work6.png" alt="" />
+                        </div>
+                        <div class="overlay">
+                            <p>+</p>
+                        </div>
+                    </div>
+                    <div class="work__item active" data-category="branding">
+                        <div class="works__pic">
+                            <img src="./img/work7.png" alt="" />
+                        </div>
+                        <div class="overlay">
+                            <p>+</p>
+                        </div>
+                    </div>
+                    <div class="work__item active" data-category="web design">
+                        <div class="works__pic">
+                            <img src="./img/work8.png" alt="" />
+                        </div>
+                        <div class="overlay">
+                            <p>+</p>
+                        </div>
+                    </div>
+                    <div class="work__item active" data-category="logo">
+                        <div class="works__pic">
+                            <img src="./img/work9.png" alt="" />
+                        </div>
+                        <div class="overlay">
+                            <p>+</p>
+                        </div>
+                    </div>
+                    <div class="work__item active" data-category="mobile app">
+                        <div class="works__pic">
+                            <img src="./img/work10.png" alt="" />
+                        </div>
+                        <div class="overlay">
+                            <p>+</p>
+                        </div>
+                    </div>
+                </div>
+                <label class="works__load" for="fileLoad">Load More</label>
+                <input
+                    class="fileLoad"
+                    id="fileLoad"
+                    name="fileLoad"
+                    type="file"
+                />
+            </div>
+        </section>
         <footer class="footer">
             <img src="./img/logo.png" alt="" />
             <div class="footer__links">
@@ -115,10 +223,10 @@
                 Reserved.
             </p>
 
-            <select class="themes2" name="themes2" id="themes2">
-                <option value="light">Light</option>
-                <option value="dark">Dark</option>
-            </select>
+            <span class="switcher">
+                <input type="checkbox" class="switch" id="switch" />
+                <label for="switch"></label>
+            </span>
 
             <a href="#header" class="footer__btnUp"
                 ><i class="fa fa-chevron-up"></i
