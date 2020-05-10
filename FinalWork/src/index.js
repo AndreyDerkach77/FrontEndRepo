@@ -1,9 +1,10 @@
 /// <reference path="../typings/globals/jquery/index.d.ts" />
 jQuery(document).ready(function($) {
+    
     let menuBtn = $(".header__burger");
     menuBtn.on("click", function() {
         let navigation = $(".header__navList");
-        navigation.toggleClass("active");
+        navigation.toggleClass("current-menu-item");
     });
     $(function() {
         $(".header__searchBtn").on("click", function() {
@@ -73,11 +74,11 @@ jQuery(document).ready(function($) {
 
     // Настройка темы
     let theme;
-    if (localStorage.getItem("theme")===null) {
-        localStorage.setItem("theme", 'light');
+    if (localStorage.getItem("theme") === null) {
+        localStorage.setItem("theme", "light");
     }
     theme = localStorage.getItem("theme");
-    
+
     $("body, .themes2, .header__nav, .works, .about").addClass(theme);
 
     if (theme === "light") {
