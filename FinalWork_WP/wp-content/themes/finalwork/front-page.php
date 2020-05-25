@@ -82,13 +82,13 @@
                         while (have_rows('work__item')) : the_row(); 
                         $img = get_sub_field('works_pic');
                         ?>
-                        <div class="work__item active" data-category="<?php the_sub_field('data-category'); ?>">
+                        <div class="work__item active" data-category="<?php the_field('data-category'); ?>">
                             <div class="works__pic">
                                 <img src="<?php echo esc_url($img['url']) ?>" alt="<?php echo esc_attr($img['alt']); ?>" />
                             </div>
-                            <div class="overlay">
+                            <!-- <div class="overlay">
                                 <p><?php the_sub_field('overlay'); ?></p>
-                            </div>
+                            </div> -->
                          </div>
 
                     <?php endwhile; endif; ?>                
@@ -174,13 +174,14 @@
                         </div>
                     </div> -->
                 </div>
-                <label class="works__load" for="fileLoad">Load More</label>
+                <a href="<?php echo esc_url(home_url('/portfolio/')); ?>" class="works__load">Load More</a>
+                <!-- <label class="works__load" for="fileLoad">Load More</label>
                 <input
                     class="fileLoad"
                     id="fileLoad"
                     name="fileLoad"
                     type="file"
-                />
+                /> -->
             </div>
         </section>
 

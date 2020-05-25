@@ -15,7 +15,7 @@ jQuery(document).ready(function ($) {
 
     $(window).on("scroll", function () {
         let nav = $(".header__nav");
-        if ($(window).scrollTop() > 200) {
+        if ($(window).scrollTop() > 300) {
             nav.addClass("fixed");
         } else {
             nav.removeClass("fixed");
@@ -57,6 +57,8 @@ jQuery(document).ready(function ($) {
         });
     });
 
+    
+
     // Настройка слайдера
     $(function () {
         // Owl Carousel
@@ -71,12 +73,13 @@ jQuery(document).ready(function ($) {
 
     // Настройка темы
     let theme;
+    let list_divs = "body, .themes2, .header__nav, .works, .about, .sendForm, .map, .values, .portfolioDetail";
     if (!localStorage.getItem("theme")) {
         localStorage.setItem("theme", "light");
     }
     theme = localStorage.getItem("theme");
 
-    $("body, .themes2, .header__nav, .works, .about, .sendForm, .map, .values").addClass(theme);
+    $(list_divs).addClass(theme);
 
     if (theme === "light") {
         $("#switch").prop("checked", true);
@@ -85,14 +88,14 @@ jQuery(document).ready(function ($) {
     }
 
     $("#switch").on("change", function () {
-        $("body, .themes2, .header__nav, .works, .about, .sendForm, .map, .values").removeClass(theme);
+        $(list_divs).removeClass(theme);
         if ($(this).prop("checked") === true) {
             localStorage.setItem("theme", "light");
         } else {
             localStorage.setItem("theme", "dark");
         }
         theme = localStorage.getItem("theme");
-        $("body, .themes2, .header__nav, .works, .about, .sendForm, .map, .values").addClass(theme);
+        $(list_divs).addClass(theme);
     });
 
     // Динамическое добавление блоков
@@ -154,48 +157,50 @@ jQuery(document).ready(function ($) {
     // Валидация формы ввода на странице контактов
 
     $(".sendForm__form").on("submit", function(event) {
-        if (validateForm()) {
-            // если есть ошибки возвращает true
-            event.preventDefault();
-        } else {
-            event.preventDefault();
+        event.preventDefault();
+        console.log("submit");
+        if (!validateForm()) {
 
-            $(".overlay-container").fadeIn(function() {
-                window.setTimeout(function() {
-                    $(".window-container").addClass("window-container-visible");
-                }, 100);
-            });
+            // $(".overlay-container").fadeIn(function() {
+            //     window.setTimeout(function() {
+            //         $(".window-container").addClass("window-container-visible");
+            //     }, 100);
+            // });
 
-            let el_name = $("#name");
-            let el_e = $("#email");
-            let el_web = $("#website");
-            let el_mes = $("#message");
+            // let el_name = $("#name");
+            // let el_e = $("#email");
+            // let el_web = $("#website");
+            // let el_mes = $("#message");
 
-            $(".lbl-name").html("Ваше Имя - " + el_name.val());
-            $(".lbl-email").html("Ваш Email - " + el_e.val());
-            $(".lbl-web").html("Ваш Website - " + el_web.val());
-            $(".lbl-mes").html("Ваше Message - " + el_mes.val());
+            // $(".lbl-name").html("Ваше Имя - " + el_name.val());
+            // $(".lbl-email").html("Ваш Email - " + el_e.val());
+            // $(".lbl-web").html("Ваш Website - " + el_web.val());
+            // $(".lbl-mes").html("Ваше Message - " + el_mes.val());
 
-            $(".close").on("click", function() {
-                $(".overlay-container")
-                    .fadeOut()
-                    .end()
-                    .find(".window-container")
-                    .removeClass("window-container-visible");
-            });
+            // $(".close").on("click", function() {
+            //     $(".overlay-container")
+            //         .fadeOut()
+            //         .end()
+            //         .find(".window-container")
+            //         .removeClass("window-container-visible");
+            // });
 
-            $(".ok").on("click", function() {
-                // e.stopPropagation();
-                window.setTimeout(100000);
-                $(".sendForm__form")
-                    .unbind("submit")
-                    .submit()
-                    .fadeOut()
-                    .end()
-                    .find(".window-container")
-                    .removeClass("window-container-visible");
-                location.href = location.href;
-            });
+            // $(".ok").on("click", function() {
+            //     // e.stopPropagation();
+            //     window.setTimeout(100000);
+            //     $(".sendForm__form")
+            //         .unbind("submit")
+            //         .submit()
+            //         .fadeOut()
+            //         .end()
+            //         .find(".window-container")
+            //         .removeClass("window-container-visible");
+            //     location.href = location.href;
+            // });
+            // unbind("submit");
+            event.stopPropagation();
+            $(this).unbind("submit").submit();
+            location.href = location.href;
         }
     });
 
@@ -212,7 +217,7 @@ jQuery(document).ready(function ($) {
         }
 
         // Проверка Email
-        let reg = /^\w+([\.-]?\w+)*@(((([a-z0-9]{2,})|([a-z0-9][-][a-z0-9]+))[\.][a-z0-9])|([a-z0-9]+[-]?))+[a-z0-9]+\.([a-z]{2}|(com|net|org|edu|int|mil|gov|arpa|biz|aero|name|coop|info|pro|museum))$/i;
+        let reg = /^\w+([\.-]?\w+)*@(((([a-z0-9]{2,})|([a-z0-9][-][a-z0-9]+))[\.][a-z0-9])|([a-z0-9]+[-]?))+[a-z0-9]+\.([a-z]{2}|(com|net|org|edu|int|mil|gov|arpa|biz|aero|name|coop|info|pro|museum))$/;
         let el_e = $("#email");
         let v_email = el_e.val() ? false : true;
         let sp_email = $(".sendForm__email");
@@ -240,6 +245,6 @@ jQuery(document).ready(function ($) {
             v_mes = false;
         }
 
-        return v_name || v_email || v_web || v_mes;
+        return v_name || v_email || v_mes;
     }
 });

@@ -17,6 +17,8 @@ body {
     font-weight: 300;
     min-height: 100vh;
     background: #fff;
+    display: flex;
+    flex-direction: column;
     &.dark {
         background: rgb(39, 38, 38);
         .themes2 {
@@ -28,11 +30,15 @@ body {
         .header__nav {
             &.dark {
                 background: rgb(39, 38, 38);
+                i {
+                    color: rgb(224, 224, 224);
+                }
             }
         }
         .works {
             &.dark {
                 background: rgb(39, 38, 38);
+                color: rgb(224, 224, 224);
             }
         }
         .about {
@@ -58,6 +64,12 @@ body {
             }
         }
         .values {
+            &.dark {
+                background: rgb(39, 38, 38);
+                color: rgb(224, 224, 224);
+            }
+        }
+        .portfolioDetail {
             &.dark {
                 background: rgb(39, 38, 38);
                 color: rgb(224, 224, 224);

@@ -28,7 +28,9 @@ get_header(); ?>
                 <p class="contact__fax">Fax:<span> &nbsp; <?php the_field('office_fax'); ?></span></p>
             </div>
             <form action="#" class="sendForm__form" name="sendForm" novalidate>
-                <div class="sendForm__inputs">
+                <?= do_shortcode('[contact-form-7 id="132" title="Контактная форма 1"]') ?>
+                
+                <!-- <div class="sendForm__inputs">
                     <div class="sendForm__input">
                         <input
                             type="text"
@@ -51,8 +53,8 @@ get_header(); ?>
                             >Введите корректный Email (имя@адрес.com)</span
                         >
                     </div>
-                </div>
-                <div class="sendForm__textarea">
+                </div> -->
+                <!-- <div class="sendForm__textarea">
                     <textarea
                         name="message"
                         id="message"
@@ -69,7 +71,7 @@ get_header(); ?>
                     data-type="zoomout"
                 >
                     Send Messsage
-                </button>
+                </button> -->
             </form>
         </div>
     </div>

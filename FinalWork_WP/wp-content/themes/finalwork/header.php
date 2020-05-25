@@ -27,44 +27,44 @@
 </head>
 <body <?php body_class(); ?>>
 <header class="header" id="header">
-            <div class="container">
-                <nav class="header__nav">
-                    <a href="<?php echo esc_url(home_url('/')); ?>" class="header__logo"
-                        ><img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt=""
-					/></a>
-                    <div class="header__navPart">
-						<?php wp_nav_menu(array(
-							'theme_location' => 'header_menu',
-							'container' => false,
-							'menu_class' => 'header__navList',
-						)); ?>
-                        <!-- <ul class="header__navList">
-                            <li><a class="active" href="./home.html">Home</a></li>
-                            <li><a href="./about.html">About</a></li>
-                            <li><a href="./portfolio.html">Portfolio</a></li>
-                            <li><a href="./blog.html">Blog</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
-                        </ul> -->
-                        <div class="header__burger">
-                            <span class="header__line header__line_top"></span>
-                            <span
-                                class="header__line header__line_middle"
-                            ></span>
-                            <span
-                                class="header__line header__line_bottom"
-                            ></span>
-                        </div>
-                        <form action="#" class="header__search">
-                            <input
-                                type="text"
-                                name="query"
-                                class="header__input"
-                            />
-                            <a class="header__searchBtn"
-                                ><i class="fa fa-search"></i
-                            ></a>
-                        </form>
-                    </div>
-                </nav>
+    <div class="container">
+        <nav class="header__nav">
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="header__logo"
+                ><img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt=""
+            /></a>
+            <div class="header__navPart">
+                <?php wp_nav_menu(array(
+                    'theme_location' => 'header_menu',
+                    'container' => false,
+                    'menu_class' => 'header__navList',
+                )); ?>
+                <!-- <ul class="header__navList">
+                    <li><a class="active" href="./home.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul> -->
+                <div class="header__burger">
+                    <span class="header__line header__line_top"></span>
+                    <span
+                        class="header__line header__line_middle"
+                    ></span>
+                    <span
+                        class="header__line header__line_bottom"
+                    ></span>
+                </div>
+                <form action="#" class="header__search">
+                    <input
+                        type="text"
+                        name="query"
+                        class="header__input"
+                    />
+                    <a class="header__searchBtn"
+                        ><i class="fa fa-search"></i
+                    ></a>
+                </form>
             </div>
-        </header>
+        </nav>
+    </div>
+</header>
