@@ -55,15 +55,17 @@
                     ></span>
                 </div>
                 <form action="#" class="header__search">
-                    <input
-                        type="text"
-                        name="query"
-                        class="header__input"
-                    />
-                    <a class="header__searchBtn"
-                        ><i class="fa fa-search"></i
-                    ></a>
+<!--                    <input-->
+<!--                        type="text"-->
+<!--                        name="query"-->
+<!--                        class="header__input"-->
+<!--                    />-->
+<!--                    <a class="header__searchBtn"-->
+<!--                        ><i class="fa fa-search"></i-->
+<!--                    ></a>-->
+                    <?= do_shortcode('[wpdreams_ajaxsearchpro id=1]') ?>
                 </form>
+
             </div>
         </nav>
     </div>

@@ -13,7 +13,6 @@ get_header();
         </div>
     </div>
 </section>
-
 <section class="works">
     <div class="container">
         <div class="works__nav">
@@ -65,9 +64,14 @@ get_header();
                             <img src="<?php echo $img['url'] ?>" alt="<?php echo $img['alt']; ?>" />
                         <?php break; endforeach; ?>
                     </div>
-                    <div class="overlay">
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="overlay">
+                            <?php the_field('portfolio_overlay', get_the_id()); ?>
+                        </div>
+                    </a>
+                    <!-- <div class="overlay">
                         <a href="<?php the_permalink(); ?>"><?php the_field('portfolio_overlay', get_the_id()); ?></a>
-                    </div>
+                    </div> -->
                 </div>
 
             <?php endwhile; endif;

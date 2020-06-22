@@ -13,14 +13,14 @@ jQuery(document).ready(function ($) {
 
     // Навигация
 
-    $(window).on("scroll", function () {
-        let nav = $(".header__nav");
-        if ($(window).scrollTop() > 300) {
-            nav.addClass("fixed");
-        } else {
-            nav.removeClass("fixed");
-        }
-    });
+    // $(window).on("scroll", function () {
+    //     let nav = $(".header__nav");
+    //     if ($(window).scrollTop() > 300) {
+    //         nav.addClass("fixed");
+    //     } else {
+    //         nav.removeClass("fixed");
+    //     }
+    // });
     let btnUp = $(".footer__btnUp");
     $(window).on("scroll", function () {
         let nav = $(".header__nav");
@@ -32,9 +32,10 @@ jQuery(document).ready(function ($) {
     });
     btnUp.on("click", function (event) {
         event.preventDefault();
-        let href = $(this).attr("href");
-        let dest = $(href).offset().top;
-        $("body,html").animate({ scrollTop: dest }, 1000);
+        $('html, body').animate({ scrollTop: 0 },1000);
+        // let href = $(this).attr("href");
+        // let dest = $(href).offset().top;
+        // $("body,html").animate({ scrollTop: dest }, 1000);
     });
 
     //Фильтрация
@@ -57,8 +58,6 @@ jQuery(document).ready(function ($) {
         });
     });
 
-    
-
     // Настройка слайдера
     $(function () {
         // Owl Carousel
@@ -73,7 +72,7 @@ jQuery(document).ready(function ($) {
 
     // Настройка темы
     let theme;
-    let list_divs = "body, .themes2, .header__nav, .works, .about, .sendForm, .map, .values, .portfolioDetail";
+    let list_divs = "body, .themes2, .header__nav, .works, .about, .sendForm, .map, .values, .portfolioDetail, .blogs, .blog__post";
     if (!localStorage.getItem("theme")) {
         localStorage.setItem("theme", "light");
     }
@@ -198,8 +197,9 @@ jQuery(document).ready(function ($) {
             //     location.href = location.href;
             // });
             // unbind("submit");
-            event.stopPropagation();
-            $(this).unbind("submit").submit();
+
+            // event.stopPropagation();
+            // $(this).unbind("submit").submit();
             location.href = location.href;
         }
     });

@@ -75,6 +75,22 @@ body {
                 color: rgb(224, 224, 224);
             }
         }
+        .blogs {
+            &.dark {
+                background: rgb(39, 38, 38);
+                color: rgb(224, 224, 224);
+                .blogs__sideBar {
+                    background: rgb(39, 38, 38);
+                    color: rgb(224, 224, 224);
+                }
+            }
+        }
+        .blog__post {
+            &.dark {
+                background: rgb(39, 38, 38);
+                color: rgb(224, 224, 224);
+            }
+        }
     }
 }
 ul {
