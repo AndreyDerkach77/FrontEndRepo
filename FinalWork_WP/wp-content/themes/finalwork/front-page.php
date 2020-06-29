@@ -54,12 +54,12 @@
 
         <section class="works">
             <div class="container">
-                <div class="works__nav">
-                    <?php if (have_rows('works_cat')):
+                <!-- <div class="works__nav"> -->
+                    <!-- <?php if (have_rows('works_cat')):
                         while (have_rows('works_cat')) : the_row(); ?>
                         <div class="works__btn"><?php the_sub_field('work_cat'); ?></div>
                         <hr />
-                    <?php endwhile; endif; ?>   
+                    <?php endwhile; endif; ?>    -->
 
                     <!-- <div class="works__btn active">All</div>
                     <hr />
@@ -74,7 +74,7 @@
                     <div class="works__btn">UI/IX</div>
                     <hr />
                     <div class="works__btn">Branding</div> -->
-                </div>
+                <!-- </div> -->
 
                 <div class="works__items">
 

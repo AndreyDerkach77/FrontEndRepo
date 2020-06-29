@@ -108,8 +108,10 @@ get_header();
         </ul>
 
         <?php
-            $host = 'localhost';
-            $db   = 'finalwork';
+            // $host = 'localhost';
+            $host = '127.0.0.1';
+            $db   = '3491757_wpress0e9006fc';
+            // $db   = 'finalwork';
             $user = 'root';
             $pass = '';
             $charset = 'utf8';

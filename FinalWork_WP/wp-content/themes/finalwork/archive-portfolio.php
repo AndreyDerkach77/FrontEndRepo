@@ -18,7 +18,9 @@ get_header();
         <div class="works__nav">
 
             <?php
-                $link = mysqli_connect("localhost", "root", "", "finalwork");
+                // $link = mysqli_connect("localhost", "root", "", "3491757_wpress0e9006fc");
+
+                $link = mysqli_connect("127.0.0.1", "root", "", "3491757_wpress0e9006fc");
 
                 $sql = 'SELECT DISTINCT `meta_value` FROM `wdsfsdfsdsdfsdfp_postmeta` WHERE `meta_key`="portfolio-data-category"';
 
