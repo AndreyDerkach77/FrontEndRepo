@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lesson14</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+        <!-- // Add the new slick-theme.css if you want the default styling -->
+        <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./libs/bootstrap-grid.css"
+        />
+        <link
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./src/index.css" />
+    </head>
+    <body>
+        <header class="header" id="header">
+            <div class="container">
+                <nav class="header__nav">
+                    <ul class="header__navList">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">What about ISAMA</a></li>
+                        <li><a href="#">What we do ?</a></li>
+                        <li><a href="#">Our Projects</a></li>
+                        <li><a href="#">Excellent Team</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <div class="header__burger">
+                        <span class="header__line header__line_top"></span>
+                        <span class="header__line header__line_middle"></span>
+                        <span class="header__line header__line_bottom"></span>
+                    </div>
+                    <form action="#" class="header__search">
+                        <label class="header__searchBtn" for="header__input"
+                            ><i class="fa fa-search"></i
+                        ></label>
+                        <!-- <a class="header__searchBtn" href="#"
+                            ><i class="fa fa-search"></i
+                        ></a> -->
+                        <input
+                            type="text"
+                            name="query"
+                            id="header__input"
+                            class="header__input"
+                            placeholder="Type your search words"
+                        />
+                    </form>
+                </nav>
+            </div>
+        </header>
+        <section class="draw">
+            <div class="container">
+                <h1>LET’S DRAW SOME ARTS</h1>
+                <div class="draw__text">
+                    <p>make your business much better</p>
+                    <!-- <img src="./img/and2.png" alt=""> -->
+                </div>
+                <div class="draw__slides">
+                    <div class="draw__slide">
+                        <img src="./img/slide1.png" alt="" />
+                        <div class="draw__overlay draw__overlay_g">
+                            <p><i class="fa fa-heart-o"></i> Like</p>
+                        </div>
+                    </div>
+                    <div class="draw__slide">
+                        <img src="./img/slide2.png" alt="" />
+                        <div class="draw__overlay">
+                            <p><i class="fa fa-heart-o"></i> Like</p>
+                        </div>
+                    </div>
+                    <div class="draw__slide">
+                        <img src="./img/slide3.png" alt="" />
+                        <div class="draw__overlay">
+                            <p><i class="fa fa-heart-o"></i> Like</p>
+                        </div>
+                    </div>
+                    <div class="draw__slide">
+                        <img src="./img/slide4.png" alt="" />
+                        <div class="draw__overlay">
+                            <p><i class="fa fa-heart-o"></i> Like</p>
+                        </div>
+                    </div>
+                    <div class="draw__slide">
+                        <img src="./img/slide5.png" alt="" />
+                        <div class="draw__overlay">
+                            <p><i class="fa fa-heart-o"></i> Like</p>
+                        </div>
+                    </div>
+                    <div class="draw__slide">
+                        <img src="./img/slide6.png" alt="" />
+                        <div class="draw__overlay">
+                            <p><i class="fa fa-heart-o"></i> Like</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <div class="row about__items">
+                    <div class="about__item col-lg-6">
+                        <img class="about__pic" src="./img/lamp.png" alt="" />
+                        <div class="about__text">
+                            <h6>What about ISAMA</h6>
+                            <p>
+                                ISAMA is a marketing foundation located in
+                                Riyadh built on the talent of creation that
+                                leads to a modern concept of professionalism. At
+                                ISAMA we believe even if you are good at what
+                                you do, you have a great product or you provide
+                                an excellent service. We still can present you a
+                                little better to the world, creating your full
+                                identity, provides you with your marketing
+                                plans, design your website, print your
+                                publications, design your logo’s and offices.
+                                Simply we give your business the perfect image.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about__item col-lg-6">
+                        <img class="about__pic" src="./img/tree.png" alt="" />
+                        <div class="about__text">
+                            <h6>Why we exist</h6>
+                            <p>
+                                Reaching customer satisfaction through providing
+                                them with cutting-edge technologies that give
+                                clients access to a wide range of tools,
+                                ensuring efficient and results-oriented
+                                communication solutions, which grant them a
+                                special character that distinguishes them from
+                                the others in the business.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="container">
+                <div class="defaultTitle services_Title">
+                    <img
+                        class="defaultPic services__titlePic"
+                        src="./img/target.png"
+                        alt=""
+                    />
+                    <div class="default__Text services__titleText">
+                        <h2 class="defaultTitleText services__title">
+                            What we do ?
+                        </h2>
+                        <p class="defaultSubTitleText services__subTitle">
+                            Everything you need to do business intelligence
+                            right
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row services__items">
+                    <div class="services__item col-lg-6">
+                        <img
+                            class="services__pic"
+                            src="./img/develop.png"
+                            alt="idea"
+                        />
+                        <div class="services__text">
+                            <h6>Web Design & Development</h6>
+                            <p>
+                                ISAMA Pvt. Ltd. designs and develops creative
+                                websites utilizing the latest technologies.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="services__item col-lg-6">
+                        <img
+                            class="services__pic"
+                            src="./img/mob.png"
+                            alt="coding"
+                        />
+                        <div class="services__text">
+                            <h6>Mobile Applications</h6>
+                            <p>
+                                Our Developers helps you to Design, Develop &
+                                Distribute Mobile Applications - Smarter &
+                                Faster.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="services__item col-lg-6">
+                        <img
+                            class="services__pic"
+                            src="./img/soft.png"
+                            alt="game"
+                        />
+                        <div class="services__text">
+                            <h6>Software Solutions</h6>
+                            <p>
+                                with our software for professional services and
+                                consulting firms. Grow your revenue and profit
+                                margins by assigning the right people to the
+                                right projects at the right time.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="services__item col-lg-6">
+                        <img
+                            class="services__pic"
+                            src="./img/interior.png"
+                            alt="design"
+                        />
+                        <div class="services__text">
+                            <h6>Interior Design</h6>
+                            <p>
+                                We offer a variety of design services ranging
+                                from Full Service Interior Design and Styling to
+                                our Design Concierge service, all of which are
+                                executed with beautiful, custom-tailored
+                                results.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="services__item col-lg-6">
+                        <img
+                            class="services__pic"
+                            src="./img/brand.png"
+                            alt="shopping"
+                        />
+                        <div class="services__text">
+                            <h6>Branding</h6>
+                            <p>
+                                We have our forte in advertising and Brand
+                                establishment. We create identities for the
+                                clients product and services in the target
+                                market.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="services__item col-lg-6">
+                        <img
+                            class="services__pic"
+                            src="./img/seo.png"
+                            alt="bonus"
+                        />
+                        <div class="services__text">
+                            <h6>SEO & Web Marketing Services</h6>
+                            <p>
+                                We offer a variety of design services ranging
+                                from Full Service Interior Design and Styling to
+                                our Design Concierge service, all of which are
+                                executed with beautiful, custom-tailored
+                                results.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projects">
+            <div class="container">
+                <div class="defaultTitle projects_Title">
+                    <img
+                        class="defaultPic projects__titlePic"
+                        src="./img/glass.png"
+                        alt=""
+                    />
+                    <div class="default__Text projects__titleText">
+                        <h2 class="defaultTitleText projects__title">
+                            Our Projects
+                        </h2>
+                        <p class="defaultSubTitleText projects__subTitle">
+                            Some of our awesome work Proud of doing great works
+                            for our clients
+                        </p>
+                    </div>
+                </div>
+                <nav class="projects__nav">
+                    <ul class="projects__navList row">
+                        <li rel="all" class="col-md-2">All</li>
+                        <li rel="mob" class="col-md-2">Mobile Apps</li>
+                        <li rel="id" class="col-md-2">Identities</li>
+                        <li rel="int" class="col-md-2">Interior Design</li>
+                        <li rel="ui" class="col-md-2">UI/UX</li>
+                    </ul>
+                </nav>
+                <div class="projects__items row d-flex justify-content-center">
+                    <div class="projects__item all mob col-md-6">
+                        <p>
+                            <a href="#"
+                                ><i class="fa fa-link fa-rotate-90"></i
+                            ></a>
+                        </p>
+                        <p><a href="#">+</a></p>
+                        <div class="projects__overlay">
+                            <img src="./img/pr1.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="projects__item all id col-md-6">
+                        <p>
+                            <a href="#"
+                                ><i class="fa fa-link fa-rotate-90"></i
+                            ></a>
+                        </p>
+                        <p><a href="#">+</a></p>
+                        <div class="projects__overlay">
+                            <img src="./img/pr2.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="projects__item all int col-md-6">
+                        <p>
+                            <a href="#"
+                                ><i class="fa fa-link fa-rotate-90"></i
+                            ></a>
+                        </p>
+                        <p><a href="#">+</a></p>
+                        <div class="projects__overlay">
+                            <img src="./img/pr3.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="projects__item all ui col-md-6">
+                        <p>
+                            <a href="#"
+                                ><i class="fa fa-link fa-rotate-90"></i
+                            ></a>
+                        </p>
+                        <p><a href="#">+</a></p>
+                        <div class="projects__overlay">
+                            <img src="./img/pr4.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="projects__item all id col-md-6">
+                        <p>
+                            <a href="#"
+                                ><i class="fa fa-link fa-rotate-90"></i
+                            ></a>
+                        </p>
+                        <p><a href="#">+</a></p>
+                        <div class="projects__overlay">
+                            <img src="./img/pr5.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="projects__item all ui col-md-6">
+                        <p>
+                            <a href="#"
+                                ><i class="fa fa-link fa-rotate-90"></i
+                            ></a>
+                        </p>
+                        <p><a href="#">+</a></p>
+                        <div class="projects__overlay">
+                            <img src="./img/pr6.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="projects__item all mob col-md-6">
+                        <p>
+                            <a href="#"
+                                ><i class="fa fa-link fa-rotate-90"></i
+                            ></a>
+                        </p>
+                        <p><a href="#">+</a></p>
+                        <div class="projects__overlay">
+                            <img src="./img/pr7.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="projects__item all ui col-md-6">
+                        <p>
+                            <a href="#"
+                                ><i class="fa fa-link fa-rotate-90"></i
+                            ></a>
+                        </p>
+                        <p><a href="#">+</a></p>
+                        <div class="projects__overlay">
+                            <img src="./img/pr8.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team">
+            <div class="container">
+                <div class="defaultTitle projects_Title">
+                    <img
+                        class="defaultPic projects__titlePic"
+                        src="./img/team_title.png"
+                        alt=""
+                    />
+                    <div class="default__Text projects__titleText">
+                        <h2 class="defaultTitleText projects__title">
+                            Meet Our Team
+                        </h2>
+                        <p class="defaultSubTitleText projects__subTitle">
+                            We have highly qualified staff with distinguished
+                            significant experiences in their field who work
+                            under pressure.
+                        </p>
+                    </div>
+                </div>
+                <div class="team__items">
+                    <div class="team__item">
+                        <div class="team__face">
+                            <img src="./img/team1.png" alt="" />
+                            <h6>Tamer</h6>
+                            <p>Senior Software Engineer</p>
+                        </div>
+                        <div class="team__overlay">
+                            <a href="#"
+                                ><i class="fa fa-facebook-square"></i
+                            ></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="team__item">
+                        <div class="team__face">
+                            <img src="./img/team2.png" alt="" />
+                            <h6>Hazem</h6>
+                            <p>PHP Developer</p>
+                        </div>
+                        <div class="team__overlay">
+                            <a href="#"
+                                ><i class="fa fa-facebook-square"></i
+                            ></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="team__item">
+                        <div class="team__face">
+                            <img src="./img/team3.png" alt="" />
+                            <h6>Mohammed</h6>
+                            <p>PHP Developer</p>
+                        </div>
+                        <div class="team__overlay">
+                            <a href="#"
+                                ><i class="fa fa-facebook-square"></i
+                            ></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="team__item">
+                        <div class="team__face">
+                            <img src="./img/team4.png" alt="" />
+                            <h6>Ahmed</h6>
+                            <p>UI/UX Designer</p>
+                        </div>
+                        <div class="team__overlay">
+                            <a href="#"
+                                ><i class="fa fa-facebook-square"></i
+                            ></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="team__item">
+                        <div class="team__face">
+                            <img src="./img/team1.png" alt="" />
+                            <h6>Tamer</h6>
+                            <p>Senior Software Engineer</p>
+                        </div>
+                        <div class="team__overlay">
+                            <a href="#"
+                                ><i class="fa fa-facebook-square"></i
+                            ></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="team__item">
+                        <div class="team__face">
+                            <img src="./img/team2.png" alt="" />
+                            <h6>Hazem</h6>
+                            <p>PHP Developer</p>
+                        </div>
+                        <div class="team__overlay">
+                            <a href="#"
+                                ><i class="fa fa-facebook-square"></i
+                            ></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="map">
+            <div class="map-responsive">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d12215.085675593971!2d39.60524841382545!3d24.465814188381994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s795%20Almadinah%20Way%20Saudi%20Arabia%20.%20Al%20Reyadah!5e0!3m2!1sru!2sua!4v1587682016509!5m2!1sru!2sua"
+                    width="100%"
+                    height="500"
+                    frameborder="0"
+                    style="border:0;"
+                    allowfullscreen=""
+                    aria-hidden="false"
+                    tabindex="0"
+                ></iframe>
+            </div>
+            <div class="map__overlay">
+                <div class="map__link">
+                    <a href="#"><i class="fa fa-map-marker"></i></a>
+                    <div class="tooltip-content">
+                        <div class="tooltip-arrow"></div>
+                        <p>795 Almaddinah Way<br> Saudi Arabia . Alreyadah</p>
+                    </div>
+                </div> 
+                <div class="map__link">
+                <a id="linktooltip" href="#"><i class="fa fa-envelope"></i></a>
+                <div class="tooltip-content">
+                    <div class="tooltip-arrow"></div>
+                    <p>795 Almaddinah Way<br> Saudi Arabia . Alreyadah</p>
+                </div>
+            </div>
+            <div class="map__link">
+                <a id="linktooltip" href="#"><i class="fa fa-phone"></i></a>
+                <div class="tooltip-content">
+                    <div class="tooltip-arrow"></div>
+                    <p>795 Almaddinah Way<br> Saudi Arabia . Alreyadah</p>
+                </div>
+            </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <!-- <a href="#header" class="footer__btnUp"><i class="fa fa-chevron-up"></i></a> -->
+            <a href="#header" class="footer__btnUp"
+                ><img src="./img/arrow_next.png" alt=""
+            /></a>
+        </footer>
+        <script src="./libs/jquery-3.5.0.js"></script>
+        <!-- <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"
+        ></script> -->
+        <script type="text/javascript" src="./slick/slick.min.js"></script>
+        <script src="./src/index.js"></script>
+    </body>
+</html>
