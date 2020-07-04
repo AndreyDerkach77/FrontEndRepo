@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1;
+    font-weight: 300;
+    min-height: 100vh;
+    background: #fff;
+    &.dark {
+        background: rgb(39, 38, 38);
+        .themes2 {
+            &.dark {
+                background: rgb(39, 38, 38);
+                color: #9c9c9c;
+            }
+        }
+        .header__nav {
+            &.dark {
+                background: rgb(39, 38, 38);
+            }
+        }
+        .works {
+            &.dark {
+                background: rgb(39, 38, 38);
+            }
+        }
+        .about {
+            &.dark {
+                background: rgb(39, 38, 38);
+                color: rgb(224, 224, 224);
+                .about__teamItem {
+                    background: rgb(39, 38, 38);
+                color: rgb(224, 224, 224);
+                }
+            }
+        }
+    }
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
