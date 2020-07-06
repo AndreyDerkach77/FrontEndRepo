@@ -10,7 +10,7 @@
             color: #777;
             text-align: center;
             text-transform: uppercase;
-            padding: 25px 35px 25px 35px;
+            padding: 25px;
             border-left: 0.7px solid #dfdfdf;
             transition: 1s;
             &.disabled {
@@ -18,9 +18,14 @@
                 cursor: default;
                 color: rgb(201, 201, 201);
             }
-            @media screen and (max-width: 500px) {
+            @media screen and (max-width: 470px) {
                 font-size: 12px;
-                padding: 15px 25px 15px 25px;
+                //padding: 15px 25px 15px 25px;
+                padding: 10px;
+            }
+            @media screen and (max-width: 320px) {
+                font-size: 10px;
+                padding: 5px;
             }
             &:hover {
                 color: #000;

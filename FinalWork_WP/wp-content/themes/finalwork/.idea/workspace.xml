@@ -19,14 +19,26 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="liveEdit" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.front-page.php">
     <configuration name="front-page.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/finalwork/front-page.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="watch" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="watch" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.watch" />
         <item itemvalue="JavaScript Debug.front-page.php" />
       </list>
     </recent_temporary>
@@ -45,6 +57,8 @@
       <workItem from="1591133706930" duration="96000" />
       <workItem from="1591301706635" duration="1631000" />
       <workItem from="1591303373577" duration="5135000" />
+      <workItem from="1593723317686" duration="653000" />
+      <workItem from="1593895079869" duration="4099000" />
     </task>
     <servers />
   </component>
@@ -56,22 +70,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1014" y="222" key="#PHP/0.0.1920.1040@0.0.1920.1040" timestamp="1591302953958" />
-    <state width="1877" height="240" key="GridCell.Tab.0.bottom" timestamp="1591340084671">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1593900871155">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="240" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591340084671" />
-    <state width="1877" height="240" key="GridCell.Tab.0.center" timestamp="1591340084669">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593900871155" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1593900871154">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="240" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591340084669" />
-    <state width="1877" height="240" key="GridCell.Tab.0.left" timestamp="1591340084666">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593900871154" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1593900871154">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="240" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591340084666" />
-    <state width="1877" height="240" key="GridCell.Tab.0.right" timestamp="1591340084670">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593900871154" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1593900871155">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="240" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591340084670" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593900871155" />
     <state width="1877" height="240" key="GridCell.Tab.1.bottom" timestamp="1591340084672">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

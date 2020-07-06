@@ -18,9 +18,7 @@ get_header();
         <div class="works__nav">
 
             <?php
-                // $link = mysqli_connect("localhost", "root", "", "3491757_wpress0e9006fc");
-
-                $link = mysqli_connect("127.0.0.1", "root", "", "3491757_wpress0e9006fc");
+                $link = mysqli_connect("localhost", "root", "", "finalwork");
 
                 $sql = 'SELECT DISTINCT `meta_value` FROM `wdsfsdfsdsdfsdfp_postmeta` WHERE `meta_key`="portfolio-data-category"';
 
@@ -33,20 +31,6 @@ get_header();
 
                 }; 
             ?>
-
-            <!-- <div class="works__btn active">All</div>
-            <hr />
-            <div class="works__btn">Logo</div>
-            <hr />
-            <div class="works__btn">Mobile App</div>
-            <hr />
-            <div class="works__btn">WordPress</div>
-            <hr />
-            <div class="works__btn">Web Design</div>
-            <hr />
-            <div class="works__btn">UI/IX</div>
-            <hr />
-            <div class="works__btn">Branding</div> -->
         </div>
 
 
