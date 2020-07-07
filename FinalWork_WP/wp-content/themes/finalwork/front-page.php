@@ -23,13 +23,6 @@
                     </div>
 
                 <?php endwhile; endif; ?>
-                <!-- <div class="slider__slide">
-                    <img src="<?php bloginfo('template_url'); ?>/img/slide2.jpg" alt="" />
-                    <div class="slider__texts">
-                        <h2>Design & Branding</h2>
-                        <p>We Deliver Quality Results</p>
-                    </div>
-                </div> -->
             </div>
         </section>
 
